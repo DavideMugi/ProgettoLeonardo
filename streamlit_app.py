@@ -131,7 +131,7 @@ if st.button("Trova", type="primary"):
     if len(universita) > 0:
       for i in range(len(universita)):
         st.write(universita[i])
-
+  st.divider()
   st.write(
     "Dati forniti da [OpenStreetMap](https://www.openstreetmap.org) sotto licenza [ODbL](https://opendatacommons.org/licenses/odbl/)."
   )
