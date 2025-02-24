@@ -100,8 +100,7 @@ if st.button("Trova", type="primary"):
     if len(scuole_infanzia) > 0:
       for i in range(len(scuole_infanzia)):
         st.write(scuole_infanzia[i])
-
-  st.divider()
+    st.divider()      
 
   if s > 0:
     if s - len(scuole) > 0 and len(scuole) > 0:
@@ -115,8 +114,7 @@ if st.button("Trova", type="primary"):
     if len(scuole) > 0:
       for i in range(len(scuole)):
         st.write(scuole[i])
-
-  st.divider()
+    st.divider()      
 
   if u > 0:
     if u - len(universita) > 0 and len(universita) > 0:
@@ -130,7 +128,8 @@ if st.button("Trova", type="primary"):
     if len(universita) > 0:
       for i in range(len(universita)):
         st.write(universita[i])
-  st.divider()
+    st.divider()
+      
   st.write(
     "Dati forniti da [OpenStreetMap](https://www.openstreetmap.org) sotto licenza [ODbL](https://opendatacommons.org/licenses/odbl/)."
   )
