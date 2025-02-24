@@ -65,7 +65,7 @@ if st.button("Trova", type="primary"):
   POIs = data["elements"]
 
   # Stampa il numero di ristoranti trovati
-  st.subheader(f"Scuole e università trovate nel raggio di {R/1000} km: {len(POIs)}.")
+  st.subheader(f"Scuole e/o università trovate nel raggio di {R/1000} km: {len(POIs)}.")
   st.divider()
 
   scuole_infanzia = []
