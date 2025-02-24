@@ -15,7 +15,6 @@ st.title('Scuole e università vicino a me?')
 
 #if POI["tags"]["amenity"] != 'driving_school'and POI["tags"]["amenity"] != 'music_school' and POI["tags"]["amenity"] != 'language_school':
 
-#41.85704571781067, 12.562532626068288
 latitudine_input = st.text_input("Inserire la latitudine: ")
 try:
     latitudine = float(latitudine_input)  # Proviamo a convertire l'input in float
