@@ -18,9 +18,6 @@ st.title('Scuole e università vicino a me?')
 latitudine_input = st.text_input("Inserire la latitudine: ")
 try:
     latitudine = float(latitudine_input)  # Proviamo a convertire l'input in float
-    if latitudine < 0:
-        st.error("La latitudine deve essere positiva!")
-        st.stop()  # Ferma l'esecuzione del codice qui
 except ValueError:
     if latitudine_input:  # Se l'utente ha scritto qualcosa di non valido
         st.error("Inserisci una latitudine valida!")
@@ -29,9 +26,6 @@ except ValueError:
 longitudine_input = st.text_input("Inserire la longitudine: ")
 try:
     longitudine = float(longitudine_input)  # Proviamo a convertire l'input in float
-    if longitudine < 0:
-        st.error("La longitudine deve essere positiva!")
-        st.stop()  # Ferma l'esecuzione del codice qui
 except ValueError:
     if longitudine_input:  # Se l'utente ha scritto qualcosa di non valido
         st.error("Inserisci una longitudine valida!")
